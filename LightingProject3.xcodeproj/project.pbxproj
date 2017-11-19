@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		22EDDFA01FBE5BE600D14444 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EDDF9F1FBE5BE600D14444 /* main.c */; };
+		22EDDFA91FBE5CFB00D14444 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EDDFA81FBE5CF300D14444 /* GLUT.framework */; };
+		22EDDFAB1FBE5D1300D14444 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EDDFAA1FBE5D0300D14444 /* OpenGL.framework */; };
+		22EDDFB81FBE5DE000D14444 /* vecMatOps.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EDDFAD1FBE5DDF00D14444 /* vecMatOps.c */; };
+		22EDDFB91FBE5DE000D14444 /* viewFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EDDFAF1FBE5DDF00D14444 /* viewFuncs.c */; };
+		22EDDFBA1FBE5DE000D14444 /* objFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EDDFB31FBE5DDF00D14444 /* objFuncs.c */; };
+		22EDDFBB1FBE5DE000D14444 /* initShader.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EDDFB51FBE5DDF00D14444 /* initShader.c */; };
+		22EDDFBC1FBE5DE000D14444 /* transformFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EDDFB71FBE5DE000D14444 /* transformFuncs.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,23 @@
 /* Begin PBXFileReference section */
 		22EDDF9C1FBE5BE600D14444 /* LightingProject3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LightingProject3; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EDDF9F1FBE5BE600D14444 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		22EDDFA71FBE5CEC00D14444 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		22EDDFA81FBE5CF300D14444 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		22EDDFAA1FBE5D0300D14444 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		22EDDFAC1FBE5DDF00D14444 /* shapeVecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shapeVecs.h; sourceTree = "<group>"; };
+		22EDDFAD1FBE5DDF00D14444 /* vecMatOps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vecMatOps.c; sourceTree = "<group>"; };
+		22EDDFAE1FBE5DDF00D14444 /* vecMatOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vecMatOps.h; sourceTree = "<group>"; };
+		22EDDFAF1FBE5DDF00D14444 /* viewFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = viewFuncs.c; sourceTree = "<group>"; };
+		22EDDFB01FBE5DDF00D14444 /* viewFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewFuncs.h; sourceTree = "<group>"; };
+		22EDDFB11FBE5DDF00D14444 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		22EDDFB21FBE5DDF00D14444 /* initShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initShader.h; sourceTree = "<group>"; };
+		22EDDFB31FBE5DDF00D14444 /* objFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objFuncs.c; sourceTree = "<group>"; };
+		22EDDFB41FBE5DDF00D14444 /* objFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objFuncs.h; sourceTree = "<group>"; };
+		22EDDFB51FBE5DDF00D14444 /* initShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = initShader.c; sourceTree = "<group>"; };
+		22EDDFB61FBE5DDF00D14444 /* transformFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transformFuncs.h; sourceTree = "<group>"; };
+		22EDDFB71FBE5DE000D14444 /* transformFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transformFuncs.c; sourceTree = "<group>"; };
+		22EDDFBD1FBE5F2200D14444 /* vshader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader.glsl; path = "../../../../Library/Developer/Xcode/DerivedData/LightingProject3-cwavelpejiqetcgatkjlhzwnzigt/Build/Products/Debug/vshader.glsl"; sourceTree = "<group>"; };
+		22EDDFBE1FBE5F2200D14444 /* fshader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader.glsl; path = "../../../../Library/Developer/Xcode/DerivedData/LightingProject3-cwavelpejiqetcgatkjlhzwnzigt/Build/Products/Debug/fshader.glsl"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EDDFAB1FBE5D1300D14444 /* OpenGL.framework in Frameworks */,
+				22EDDFA91FBE5CFB00D14444 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +69,9 @@
 			children = (
 				22EDDF9E1FBE5BE600D14444 /* LightingProject3 */,
 				22EDDF9D1FBE5BE600D14444 /* Products */,
+				22EDDFBE1FBE5F2200D14444 /* fshader.glsl */,
+				22EDDFBD1FBE5F2200D14444 /* vshader.glsl */,
+				22EDDFA61FBE5CEC00D14444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +87,30 @@
 			isa = PBXGroup;
 			children = (
 				22EDDF9F1FBE5BE600D14444 /* main.c */,
+				22EDDFB51FBE5DDF00D14444 /* initShader.c */,
+				22EDDFB21FBE5DDF00D14444 /* initShader.h */,
+				22EDDFB31FBE5DDF00D14444 /* objFuncs.c */,
+				22EDDFB41FBE5DDF00D14444 /* objFuncs.h */,
+				22EDDFAC1FBE5DDF00D14444 /* shapeVecs.h */,
+				22EDDFB71FBE5DE000D14444 /* transformFuncs.c */,
+				22EDDFB61FBE5DDF00D14444 /* transformFuncs.h */,
+				22EDDFB11FBE5DDF00D14444 /* types.h */,
+				22EDDFAD1FBE5DDF00D14444 /* vecMatOps.c */,
+				22EDDFAE1FBE5DDF00D14444 /* vecMatOps.h */,
+				22EDDFAF1FBE5DDF00D14444 /* viewFuncs.c */,
+				22EDDFB01FBE5DDF00D14444 /* viewFuncs.h */,
 			);
 			path = LightingProject3;
+			sourceTree = "<group>";
+		};
+		22EDDFA61FBE5CEC00D14444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22EDDFAA1FBE5D0300D14444 /* OpenGL.framework */,
+				22EDDFA81FBE5CF300D14444 /* GLUT.framework */,
+				22EDDFA71FBE5CEC00D14444 /* GLKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EDDFB81FBE5DE000D14444 /* vecMatOps.c in Sources */,
+				22EDDFBB1FBE5DE000D14444 /* initShader.c in Sources */,
+				22EDDFBA1FBE5DE000D14444 /* objFuncs.c in Sources */,
+				22EDDFB91FBE5DE000D14444 /* viewFuncs.c in Sources */,
+				22EDDFBC1FBE5DE000D14444 /* transformFuncs.c in Sources */,
 				22EDDFA01FBE5BE600D14444 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
